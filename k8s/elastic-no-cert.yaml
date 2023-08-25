@@ -16,7 +16,7 @@ minimumMasterNodes: 1 #2 PROD
 ingress:
   enabled: true
   hosts:
-    - host: elastic.k8s.devopsforlife.io #Change the hostname to the one you need
+    - host: elastic.mt2.vegus.srv.br #Change the hostname to the one you need
       paths:
         - path: /
   #tls:
