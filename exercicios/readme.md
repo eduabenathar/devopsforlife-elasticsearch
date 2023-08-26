@@ -116,9 +116,9 @@ kubectl apply -f elastic-credentials.yaml
 helm repo add elastic https://helm.elastic.co
 helm repo update
 
-helm install elk-elasticsearch elastic/elasticsearch -f elastic-no-cert.yaml --namespace logging 
+helm install elk-elasticsearch elastic/elasticsearch -f elastic-no-cert.yaml --namespace logging  --set imageTag=7.17.3
 
-helm upgrade elk-elasticsearch elastic/elasticsearch -f elastic-no-cert.yaml --namespace logging 
+helm upgrade elk-elasticsearch elastic/elasticsearch -f elastic-no-cert.yaml --namespace logging --set imageTag=7.17.3
 
 # helm upgrade elk-elasticsearch elastic/elasticsearch -f elastic.yaml --namespace logging 
 
